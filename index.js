@@ -16,6 +16,6 @@ app.get("/", (req, res) => {
 app.use("/api/auth", require("./routes/auth.js"));
 app.use("/api/notes", require("./routes/notes.js"));
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
