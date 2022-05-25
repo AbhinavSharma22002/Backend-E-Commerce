@@ -7,7 +7,6 @@ const app = express();
 const Cors = require("cors");
 app.use(Cors());
 app.use(express.json());
-
 //availabel routes
 app.get("/", (req, res) => {
   res.send("Hello World!");

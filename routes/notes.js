@@ -102,7 +102,7 @@ router.delete('/deleteNote/:id',fetchuser, async (req,res)=>{
 router.get('/Data',async(req,res)=>{
   try{
     const notes = await Data.find();
-    res.json(notes);
+    // res.json(notes);
     res.send("OK");
 }
 catch(error){
