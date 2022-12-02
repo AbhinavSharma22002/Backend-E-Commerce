@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
 app.use("/api/auth", require("./routes/auth.js"));
 app.use("/api/notes", require("./routes/notes.js"));
 
+app.get(".well-known/acme-challenge/y0z2qzqc9IUSyhADp-Et4XPj5GB3fx_7H7ikUoeN3Zo",(req,res)=>
+{
+res.send("y0z2qzqc9IUSyhADp-Et4XPj5GB3fx_7H7ikUoeN3Zo");
+});
 // app.listen(process.env.PORT || port, () => {
 //   console.log(`Listening at http://localhost:${port}`);
 // });
