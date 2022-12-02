@@ -9,13 +9,13 @@ app.use(Cors());
 app.use(express.json());
 //availabel routes
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Felloo World!");
 });
 
 app.use("/api/auth", require("./routes/auth.js"));
 app.use("/api/notes", require("./routes/notes.js"));
 
-app.get(".well-known/acme-challenge/y0z2qzqc9IUSyhADp-Et4XPj5GB3fx_7H7ikUoeN3Zo",(req,res)=>
+app.get("/.well-known/acme-challenge/y0z2qzqc9IUSyhADp-Et4XPj5GB3fx_7H7ikUoeN3Zo",(req,res)=>
 {
 res.send("y0z2qzqc9IUSyhADp-Et4XPj5GB3fx_7H7ikUoeN3Zo");
 });
